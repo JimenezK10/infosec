@@ -6,7 +6,7 @@ const app = express();
     (data) => {
       const packJson = JSON.parse(data);
       const helmet = packJson.dependencies.helmet;
-      assert(helmet === '3.21.3' || helmet === '^3.21.3');
+      assert(helmet === '3.23.3' || helmet === '^3.23.3');
     },
     (xhr) => {
       throw new Error(xhr.responseText);
